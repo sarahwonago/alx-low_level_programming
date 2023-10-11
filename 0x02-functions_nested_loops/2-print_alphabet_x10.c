@@ -4,19 +4,26 @@
  *
  * Return: Always 0.
  */
+#include "main.h"
+/**
+ * print_alphabet_x10(void): prints 10 times the alphabet.
+ *
+ * Return: Always 0.
+ */
 void print_alphabet_x10(void)
 {
-    char letter;
-    int count;
+	int round = 0;
+	char letter = 'a';
 
-    for (count = 0; count < 10; count++)
-    {
-        letter = 'a';
-        while (letter <= 'z')
-        {
-            _putchar(letter);
-            letter++;
-        }
-        _putchar('\n');
-    }
+	while (round < 10)
+	{
+		letter = 'a';
+		while (letter <= 'z')
+		{
+			_putchar(letter);
+			letter++;
+		}
+		_putchar('\n');
+		round++;
+	}
 }
