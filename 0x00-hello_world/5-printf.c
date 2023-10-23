@@ -2,9 +2,13 @@
 
 /**
  * main - Entry point
- * Description: prints "with proper grammar, but the outcome is a piece 
- * of art,"
- * Return: Always 0 (Success)
+ *
+ * Description:
+ * This is the main function, which serves as the entry point for the program.
+ * It prints the text "with proper grammar, but the outcome is a piece of art,".
+ *
+ * Return:
+ * 0 - Always returns 0 to indicate success.
  */
 
 int main(void)
