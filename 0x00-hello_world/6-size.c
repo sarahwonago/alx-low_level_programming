@@ -3,8 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: This program prints the size of various data types on the computer
- * it is compiled and run on.
+ * Description: This program prints the size of various data types on the
+ * computer it is compiled and run on.
  *
  * Return: Always 0 (Success)
  */
