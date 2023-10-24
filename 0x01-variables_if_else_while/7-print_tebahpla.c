@@ -12,14 +12,14 @@
 
 int main(void)
 {
-	int i = 122;
+	char letter = 'z';
 
-	while (i > 96)
+	while (letter >= 'a')
 	{
-		putchar(i);
-		i--;
+		putchar(letter);
+		letter--;
 	}
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
