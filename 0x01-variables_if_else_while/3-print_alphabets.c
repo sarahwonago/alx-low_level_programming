@@ -10,21 +10,19 @@
 
 int main(void)
 {
-	int i, j;
-
-	i = 97;
-	j = 65;
-
-	while (i < 123)
+	char lowerCase ='a';
+	char upperCase = 'A';
+	
+	while (lowerCase <= 'z')
 	{
-		putchar(i);
-		i++;
+		putchar(lowerCase);
+		lowerCase++;
 	}
 
-	while (j < 91)
+	while (upperCase <= 'Z')
 	{
-		putchar(j);
-		j++;
+		putchar(upperCase);
+		upperCase++;
 	}
 
 	putchar(10);
