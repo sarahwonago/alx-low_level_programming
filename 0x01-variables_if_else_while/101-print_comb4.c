@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-* main - prints combination of numbers
-*
-* Description - code to print combination of numbers
-* Return 0 success
-*/
+ * main - prints combination of numbers
+ * Description: code to print combination of numbers
+ * it is executed.
+ * Return: Always 0 (Success)
+ */
 
 int main(void) {
     int digit1, digit2, digit3;
