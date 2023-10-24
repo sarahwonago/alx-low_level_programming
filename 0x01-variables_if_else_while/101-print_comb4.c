@@ -3,7 +3,6 @@
 /**
  * main - prints combination of numbers
  * Description: code to print combination of numbers
- * it is executed.
  * Return: Always 0 (Success)
  */
 
