@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - prints combination of numbers
+ * Description: code to print combination of numbers
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
     int firstDigit, secondDigit;
