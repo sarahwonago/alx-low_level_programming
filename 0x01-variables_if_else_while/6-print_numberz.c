@@ -14,13 +14,13 @@ int main(void)
 
 	i = 48;
 
-	while (i < 58)
+	while (i <= 57)
 	{
 		putchar(i);
 		i++;
 	}
 
-	putchar(10);
+	putchar('\n\);
 
 	return (0);
 }
