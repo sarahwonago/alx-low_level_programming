@@ -10,17 +10,17 @@
 
 int main(void)
 {
-	int i = 97;
+	char letter = 'a';
 
-	while (i < 123)
+	while (letter <= 'z')
 	{
-		if (i != 101 && i != 113)
+		if (letter != 'e' && letter != 'q')
 		{
-			putchar(i);
+			putchar(letter);
 		}
-		i++;
+		letter++;
 	}
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
