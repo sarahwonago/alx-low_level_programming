@@ -5,14 +5,23 @@
  *
  * Return: nothing
  */
+
 void print_most_numbers(void)
 {
-	int x = '0';
+    char digit = '0';
 
-	for (; x <= '9'; x++)
-	{
-		if (x != '2' && x != '4')
-			_putchar(x);
-	}
-	_putchar('\n');
+    while (digit <= '9')
+    {
+        if (digit == '2' || digit == '4')
+        {
+            digit++;
+            continue; 
+        }
+
+        _putchar(digit);
+        digit++;
+    }
+
+    _putchar('\n');
 }
+
