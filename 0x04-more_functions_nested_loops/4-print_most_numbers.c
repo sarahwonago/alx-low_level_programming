@@ -12,13 +12,10 @@ void print_most_numbers(void)
 
     while (digit <= '9')
     {
-        if (digit == '2' || digit == '4')
+        if (digit != '2' && digit != '4')
         {
-            digit++;
-            continue; 
+            _putchar(digit);
         }
-
-        _putchar(digit);
         digit++;
     }
 
