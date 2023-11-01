@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- * create_array - array for prints a string
+ * create_array - array for printing a string
  * @size: number of elements in the array
  * @c: char
  * Return: pointer
@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	/*introduce malloc*/
+	
 	buff = (char *) malloc(size * sizeof(c));
 
 	if (buff == 0)
