@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * reverse_array - reverse the content of an array of integers
- * @a: an array of integers
- * @n: the number of elements to swap
- * Return: 0
+ * reverse_array - Reverses the content of an array of integers
+ * @a: An array of integers
+ * @n: The number of elements to swap
+ *
+ * Return: void
  */
 void reverse_array(int *a, int n)
 {
@@ -16,9 +17,9 @@ void reverse_array(int *a, int n)
 	{
 		for (b = d + 1; b > 0; b--)
 		{
-			c = *(a + b);
-			*(a + b) = *(a + (b - 1));
-			*(a + (b - 1)) = c;
+			c = a[b];
+			a[b] = a[b - 1];
+			a[b - 1] = c;
 		}
 	}
 }
