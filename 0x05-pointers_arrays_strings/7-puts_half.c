@@ -7,6 +7,7 @@
  * Description: This function prints the second half of the given string,
  * or the last n characters if the length is odd, followed by a newline.
  */
+
 void puts_half(char *str)
 {
     int length = 0;
