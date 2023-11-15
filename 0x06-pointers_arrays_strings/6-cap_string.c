@@ -1,30 +1,31 @@
 #include "main.h"
 
 /**
- * *cap_string - capitalize all words of a string
- * @st: input string
- * Return: pointer to destination
+ * cap_string - Capitalizes the first letter of each word in a string
+ * @str: Input string
+ *
+ * Return: Pointer to the modified string
  */
-char *cap_string(char *st)
+char *cap_string(char *str)
 {
-	int ct = 0, a;
-	int wrds[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int i;
+	int separators[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	if (*(st + ct) >= 97 && *(st + ct) <= 122)
-		*(st + ct) = *(st + ct) - 32;
-	ct++;
-	while (*(st + ct) != '\0')
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] -= 32;
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (a = 0; a < 13; a++)
+		int j;
+		for (j = 0; j < 13; j++)
 		{
-			if (*(st + ct) == wrds[a])
+			if (str[i] == separators[j] && str[i + 1] >= 'a' && str[i + 1] <= 'z')
 			{
-				if ((*(st + (ct + 1)) >= 97) && (*(st + (ct + 1)) <= 122))
-					*(st + (ct + 1)) = *(st + (ct + 1)) - 32;
+				str[i + 1] -= 32;
 				break;
 			}
 		}
-		ct++;
 	}
-	return (st);
+
+	return (str);
 }
