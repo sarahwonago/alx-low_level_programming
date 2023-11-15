@@ -7,21 +7,20 @@
  * Description: This function prints the second half of the given string,
  * or the last n characters if the length is odd, followed by a newline.
  */
-
 void puts_half(char *str)
 {
-    int length = 0;
-    int i;
+	int length = 0;
+	int i;
 
-    while (str[length] != '\0')
-    {
-        length++;
-    }
+	while (str[length] != '\0')
+	{
+		length++;
+	}
 
-    for (i = (length + 1) / 2; str[i] != '\0'; i++)
-    {
-        _putchar(str[i]);
-    }
+	for (i = (length + 1) / 2; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
 
-    _putchar('\n');
+	_putchar('\n');
 }
