@@ -8,21 +8,30 @@
 
 int main(void)
 {
-    int firstDigit, secondDigit;
+    int i, j;
 
-    for (firstDigit = 0; firstDigit <= 8; firstDigit++)
+    while(i <= 56)
     {
-        for (secondDigit = firstDigit + 1; secondDigit <= 9; secondDigit++)
-        {
-            putchar(firstDigit + '0');
-            putchar(secondDigit + '0');
+	    i = 48;
+	    j = 49;
 
-            if (firstDigit != 8 || secondDigit != 9)
-            {
-                putchar(',');
-                putchar(' ');
-            }
-        }
+	    while(j<=57)
+	    {
+	
+		    putchar(i);
+		    putchar(j);
+
+		    if (i != 56 && j != 57)
+		    {
+			    putchar(44);
+			    putchar(32);
+		    }
+		    j++;
+
+	    }
+
+	    i++;
+	    j++;
     }
 
     putchar('\n');

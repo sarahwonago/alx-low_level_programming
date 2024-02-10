@@ -12,20 +12,20 @@ int main(void)
 {
 	int i;
 
-	i = 48; //ascii for 0
+	i = 48;
 
 	while (i < 58)
 	{
 		putchar(i);
 		if (i != 57)
 		{
-			putchar(44); //ascii for a comma
-			putchar(32); //ascii for a space
+			putchar(44);
+			putchar(32);
 		}
 		i++;
 	}
 
-	putchar(10); //ascii for a newline
+	putchar(10);
 
 	return (0);
 }
