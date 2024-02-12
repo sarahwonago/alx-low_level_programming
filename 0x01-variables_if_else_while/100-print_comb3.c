@@ -1,39 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - prints combination of numbers
- * Description: code to print combination of numbers
+ * main - prints combination of two digits
+ * Description: code to print combination of two digits
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-    int i, j;
+    int i = 0, j = 1;
 
-    while(i <= 56)
+    while (i <= 8)
     {
-	    i = 48;
-	    j = 49;
+        while (j <= 9)
+        {
+            putchar(i + '0');
+            putchar(j + '0');
 
-	    while(j<=57)
-	    {
-	
-		    putchar(i);
-		    putchar(j);
+            if (!(i == 8 && j == 9))
+            {
+                putchar(',');
+                putchar(' ');
+            }
 
-		    if (i != 56 && j != 57)
-		    {
-			    putchar(44);
-			    putchar(32);
-		    }
-		    j++;
+            j++;
+        }
 
-	    }
-
-	    i++;
-	    j++;
+        i++;
+        j = i + 1;
     }
 
     putchar('\n');
     return (0);
 }
+
