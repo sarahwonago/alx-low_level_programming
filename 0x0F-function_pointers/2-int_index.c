@@ -11,15 +11,18 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int k;
-	int hesabu;
+	int cnt;
 
+	if (size <= 0)
+		return (1);
+			
 	if (array != NULL && cmp != NULL)
 	{
 		k = 1;
 		while (k <= size)
 		{
-			hesabu = cmp(array[k]);
-			if (hesabu != 0)
+			cnt = cmp(array[k]);
+			if (cnt != 0)
 			{
 				return (k);
 			}
