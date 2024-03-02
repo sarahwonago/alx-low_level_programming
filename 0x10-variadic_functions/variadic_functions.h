@@ -9,8 +9,8 @@ void print_all(const char * const format, ...);
 
 /**
  * struct fm - structure
- * @fm: Pointer
- * @p: pointer
+ * @fm: Pointer to a char
+ * @p: pointer to a function
  */
 typedef struct fm
 {

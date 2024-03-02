@@ -9,16 +9,16 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list list_n;
+	va_list ap;
 	int res;
 	unsigned int k;
 
-	va_start(list_n, n);
+	va_start(ap, n);
 
 	k = 0;
 	while (k < n)
 	{
-		res = va_arg(list_n, int);
+		res = va_arg(ap, int);
 
 		printf("%d", res);
 		if (k < n - 1 && (separator != NULL))
@@ -28,5 +28,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		k++;
 	}
 	printf("\n");
-	va_end(list_n);
+	va_end(ap);
 }
